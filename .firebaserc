@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gallery-flutter-dev": {
+      "hosting": {
+        "prod": [
+          "gallery-flutter-dev"
+        ],
+        "staging": [
+          "gallery-flutter-staging"
+        ]
+      }
+    }
+  }
+}
