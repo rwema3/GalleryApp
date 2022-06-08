@@ -147,13 +147,8 @@ For posterity, information about doing these things locally is available at [go/
 
 </details>
 
-## Tests
+## Developer
 
-The gallery has its own set of unit, golden, and integration tests.
+> @Rwema3
 
-In addition, Flutter itself uses the gallery in tests. To enable breaking changes, the gallery version is pinned in two places:
-
-- `flutter analyze`: https://github.com/flutter/tests/blob/master/registry/flutter_gallery.test
-- DeviceLab tests: https://github.com/flutter/flutter/blob/master/dev/devicelab/lib/versions/gallery.dart
-
-[latest release]: https://github.com/flutter/gallery/releases/latest
+## PLEASE REMEMBER TO STAR THS REPO!!
