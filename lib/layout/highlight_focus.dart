@@ -1,4 +1,5 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+  final Color? highlightColor;
 
   /// [borderColor] is the color of the border when the widget is focused.
   final Color? borderColor;
