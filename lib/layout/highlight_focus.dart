@@ -1,4 +1,8 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+
+  @override
+  Widget build(BuildContext context) {
+    final highlightColor = widget.highlightColor ??
         Theme.of(context).colorScheme.primary.withOpacity(0.5);
     final borderColor =
         widget.borderColor ?? Theme.of(context).colorScheme.onPrimary;
