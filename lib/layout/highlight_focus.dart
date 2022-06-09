@@ -1,4 +1,5 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+    final borderColor =
         widget.borderColor ?? Theme.of(context).colorScheme.onPrimary;
 
     final highlightedDecoration = BoxDecoration(
