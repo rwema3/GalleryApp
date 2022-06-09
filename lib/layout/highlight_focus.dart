@@ -1,4 +1,5 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+        Theme.of(context).colorScheme.primary.withOpacity(0.5);
     final borderColor =
         widget.borderColor ?? Theme.of(context).colorScheme.onPrimary;
 
