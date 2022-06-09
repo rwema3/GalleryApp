@@ -1,4 +1,7 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+
+
+  /// [child] is your widget.
   final Widget child;
 
   /// [highlightColor] is the color filled in the border when the widget
