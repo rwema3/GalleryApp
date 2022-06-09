@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+/// [HighlightFocus] is a helper widget for giving a child focus
 
   /// [child] is your widget.
   final Widget child;
