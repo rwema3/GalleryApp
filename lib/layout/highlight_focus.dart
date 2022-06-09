@@ -1,4 +1,8 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+  State<HighlightFocus> createState() => _HighlightFocusState();
+}
+
+class _HighlightFocusState extends State<HighlightFocus> {
   late bool isFocused;
 
   @override
