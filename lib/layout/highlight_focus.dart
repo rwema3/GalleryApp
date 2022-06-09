@@ -1,5 +1,7 @@
 // Copyright 2019 The Flutter team. All rights reserved.
 
+  final String? debugLabel;
+
   @override
   State<HighlightFocus> createState() => _HighlightFocusState();
 }
