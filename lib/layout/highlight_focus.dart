@@ -11,6 +11,7 @@ import 'package:flutter/services.dart';
 
   /// [onPressed] is called when you press space, enter, or numpad-enter
   /// when the widget is focused.
+  final VoidCallback onPressed;
 
   /// [child] is your widget.
   final Widget child;
