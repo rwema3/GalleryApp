@@ -1,4 +1,6 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+
+  /// [highlightColor] is the color filled in the border when the widget
   /// is focused.
   /// Use [Colors.transparent] if you do not want one.
   /// Use an opacity less than 1 to make the underlying widget visible.
