@@ -1,5 +1,8 @@
 // Copyright 2019 The Flutter team. All rights reserved.
 
+  /// [borderColor] is the color of the border when the widget is focused.
+  final Color? borderColor;
+
   /// [hasFocus] is true when focusing on the widget is allowed.
   /// Set to false if you want the child to skip focus.
   final bool hasFocus;
