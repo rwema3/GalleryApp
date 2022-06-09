@@ -1,4 +1,6 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+
+  /// [hasFocus] is true when focusing on the widget is allowed.
   /// Set to false if you want the child to skip focus.
   final bool hasFocus;
 
