@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 
 /// [HighlightFocus] is a helper widget for giving a child focus
 /// allowing tab-navigation.
-
+/
   /// [child] is your widget.
   final Widget child;
 
