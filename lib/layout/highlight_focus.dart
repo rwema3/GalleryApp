@@ -1,4 +1,6 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+  /// Set to false if you want the child to skip focus.
+  final bool hasFocus;
 
   final String? debugLabel;
 
