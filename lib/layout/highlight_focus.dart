@@ -1,4 +1,6 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+    isFocused = false;
+    super.initState();
   }
 
   @override
