@@ -1,4 +1,5 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+  late bool isFocused;
 
   @override
   void initState() {
