@@ -1,4 +1,5 @@
 // Copyright 2019 The Flutter team. All rights reserved.
+  void initState() {
     isFocused = false;
     super.initState();
   }
