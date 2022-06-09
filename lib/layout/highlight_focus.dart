@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 /// Wrap your widget as [child] of a [HighlightFocus] widget.
 class HighlightFocus extends StatefulWidget {
   const HighlightFocus({
+    super.key,
     required this.child,
  
   /// [onPressed] is called when you press space, enter, or numpad-enter
