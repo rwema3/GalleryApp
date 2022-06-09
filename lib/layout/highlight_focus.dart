@@ -9,7 +9,8 @@ import 'package:flutter/services.dart';
 /// allowing tab-navigation.
 /// Wrap your widget as [child] of a [HighlightFocus] widget.
 
- 
+  /// [onPressed] is called when you press space, enter, or numpad-enter
+S
   /// [child] is your widget.
   final Widget child;
 
