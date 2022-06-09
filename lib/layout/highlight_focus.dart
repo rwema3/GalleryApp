@@ -8,7 +8,8 @@ import 'package:flutter/services.dart';
 /// [HighlightFocus] is a helper widget for giving a child focus
 /// allowing tab-navigation.
 /// Wrap your widget as [child] of a [HighlightFocus] widget.
-
+class HighlightFocus extends StatefulWidget {
+ 
   /// [onPressed] is called when you press space, enter, or numpad-enter
   /// when the widget is focused.
   final VoidCallback onPressed;
