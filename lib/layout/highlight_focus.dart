@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 /// Wrap your widget as [child] of a [HighlightFocus] widget.
 
   /// [onPressed] is called when you press space, enter, or numpad-enter
+  /// when the widget is focused.
 
   /// [child] is your widget.
   final Widget child;
