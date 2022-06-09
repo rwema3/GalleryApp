@@ -15,6 +15,7 @@ class HighlightFocus extends StatefulWidget {
     required this.child,
     this.highlightColor,
     this.borderColor,
+    this.hasFocus = true,
  
   /// [onPressed] is called when you press space, enter, or numpad-enter
   /// when the widget is focused.
