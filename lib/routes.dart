@@ -94,7 +94,6 @@ class RouteConfiguration {
       openInSecondScreen: true,
     ),
     
-  /// route. Set it on the [MaterialApp.onGenerateRoute] or
   /// [WidgetsApp.onGenerateRoute] to make use of the [paths] for route
   /// matching.
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
