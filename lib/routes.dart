@@ -91,20 +91,6 @@ class RouteConfiguration {
             // ignore: prefer_const_constructors
             () => fortnightly.FortnightlyApp()),
       ),
-        if (path.openInSecondScreen) {
-          return TwoPanePageRoute<void>(
-            builder: (context) => path.builder(context, match),
-            settings: settings,
-          );
-        } else {
-          return MaterialPageRoute<void>(
-            builder: (context) => path.builder(context, match),
-            settings: settings,
-          );
-        }
-      }
-    }
-
     // If no match was found, we let [WidgetsApp.onUnknownRoute] handle it.
     return null;
   }
