@@ -93,10 +93,7 @@ class RouteConfiguration {
       ),
       openInSecondScreen: true,
     ),
-    ),
-  ];
-
-  /// The route generator callback used when the app is navigated to a named
+    
   /// route. Set it on the [MaterialApp.onGenerateRoute] or
   /// [WidgetsApp.onGenerateRoute] to make use of the [paths] for route
   /// matching.
