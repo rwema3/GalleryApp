@@ -91,7 +91,10 @@ class RouteConfiguration {
             // ignore: prefer_const_constructors
             () => fortnightly.FortnightlyApp()),
       ),
-  
+        }
+      }
+    }
+
     // If no match was found, we let [WidgetsApp.onUnknownRoute] handle it.
     return null;
   }
