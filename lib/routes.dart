@@ -95,7 +95,7 @@ class RouteConfiguration {
     ),
     
   
-  
+    for (final path in paths) {
       final regExpPattern = RegExp(path.pattern);
       if (regExpPattern.hasMatch(settings.name!)) {
         final firstMatch = regExpPattern.firstMatch(settings.name!)!;
