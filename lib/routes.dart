@@ -94,7 +94,7 @@ class RouteConfiguration {
       openInSecondScreen: true,
     ),
     
-  /// matching.
+  
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     for (final path in paths) {
       final regExpPattern = RegExp(path.pattern);
