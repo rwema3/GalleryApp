@@ -84,6 +84,17 @@ class RouteConfiguration {
       openInSecondScreen: true,
     ),
   
+    // If no match was found, we let [WidgetsApp.onUnknownRoute] handle it.
+    return null;
+  }
+}
+
+class NoAnimationMaterialPageRoute<T> extends MaterialPageRoute<T> {
+  NoAnimationMaterialPageRoute({
+    required super.builder,
+    super.settings,
+  });
+
   @override
   Widget buildTransitions(
     BuildContext context,
