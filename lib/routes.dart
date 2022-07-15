@@ -96,6 +96,10 @@ class RouteConfiguration {
     Path(
       r'^' + reply_routes.homeRoute,
       // ignore: prefer_const_constructors
+      (context, match) =>
+          const StudyWrapper(study: reply.ReplyApp(), hasBottomNavBar: true),
+      openInSecondScreen: true,
+    ),
     
       r'^/',
       (context, match) => const RootPage(),
