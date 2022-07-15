@@ -94,6 +94,8 @@ class RouteConfiguration {
       openInSecondScreen: true,
     ),
     Path(
+      r'^' + reply_routes.homeRoute,
+      // ignore: prefer_const_constructors
     
       r'^/',
       (context, match) => const RootPage(),
