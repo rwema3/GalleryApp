@@ -100,19 +100,7 @@ class RouteConfiguration {
           const StudyWrapper(study: reply.ReplyApp(), hasBottomNavBar: true),
       openInSecondScreen: true,
     ),
-    Path(
-      r'^' + starter_app_routes.defaultRoute,
-      (context, match) => const StudyWrapper(
-        study: starter_app.StarterApp(),
-      ),
-      openInSecondScreen: true,
-    ),
-    Path(
-      r'^/',
-      (context, match) => const RootPage(),
-      openInSecondScreen: false,
-    ),
-  ];
+  
 
   /// The route generator callback used when the app is navigated to a named
   /// route. Set it on the [MaterialApp.onGenerateRoute] or
