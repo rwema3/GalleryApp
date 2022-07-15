@@ -94,6 +94,7 @@ class RouteConfiguration {
       openInSecondScreen: true,
     ),
     
+  /// [WidgetsApp.onGenerateRoute] to make use of the [paths] for route
   /// matching.
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     for (final path in paths) {
