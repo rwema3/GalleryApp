@@ -91,28 +91,7 @@ class RouteConfiguration {
             // ignore: prefer_const_constructors
             () => fortnightly.FortnightlyApp()),
       ),
-    // If no match was found, we let [WidgetsApp.onUnknownRoute] handle it.
-    return null;
-  }
-}
-
-class NoAnimationMaterialPageRoute<T> extends MaterialPageRoute<T> {
-  NoAnimationMaterialPageRoute({
-    required super.builder,
-    super.settings,
-  });
-
-  @override
-  Widget buildTransitions(
-    BuildContext context,
-    Animation<double> animation,
-    Animation<double> secondaryAnimation,
-    Widget child,
-  ) {
-    return child;
-  }
-}
-
+  
 class TwoPanePageRoute<T> extends OverlayRoute<T> {
   TwoPanePageRoute({
     required this.builder,
