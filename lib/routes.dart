@@ -83,6 +83,24 @@ class RouteConfiguration {
       ),
       openInSecondScreen: true,
     ),
+  
+
+  /// The route generator callback used when the app is navigated to a named
+  /// route. Set it on the [MaterialApp.onGenerateRoute] or
+  /// [WidgetsApp.onGenerateRoute] to make use of the [paths] for route
+  /// matching.
+  static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
+    for (final path in paths) {
+      final regExpPattern = RegExp(path.pattern);
+      if (regExpPattern.hasMatch(settings.name!)) {
+        final firstMatch = regExpPattern.firstMatch(settings.name!)!;
+        final match = (firstMatch.groupCount == 1) ? firstMatch.group(1) : null;
+        if (kIsWeb) {
+          return NoAnimationMaterialPageRoute<void>(
+            builder: (context) => path.builder(context, match),
+            settings: settings,
+          );
+        }
         if (path.openInSecondScreen) {
           return TwoPanePageRoute<void>(
             builder: (context) => path.builder(context, match),
