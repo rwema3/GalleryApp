@@ -91,7 +91,6 @@ class RouteConfiguration {
             // ignore: prefer_const_constructors
             () => fortnightly.FortnightlyApp()),
       ),
-            builder: (context) => path.builder(context, match),
             settings: settings,
           );
         } else {
