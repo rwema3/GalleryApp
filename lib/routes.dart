@@ -83,16 +83,6 @@ class RouteConfiguration {
       ),
       openInSecondScreen: true,
     ),
-  
-
-class TwoPanePageRoute<T> extends OverlayRoute<T> {
-  TwoPanePageRoute({
-    required this.builder,
-    super.settings,
-  });
-
-  final WidgetBuilder builder;
-
   @override
   Iterable<OverlayEntry> createOverlayEntries() sync* {
     yield OverlayEntry(builder: (context) {
