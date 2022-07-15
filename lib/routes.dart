@@ -91,6 +91,11 @@ class RouteConfiguration {
             // ignore: prefer_const_constructors
             () => fortnightly.FortnightlyApp()),
       ),
+      openInSecondScreen: true,
+    ),
+    
+  
+  
       if (regExpPattern.hasMatch(settings.name!)) {
         final firstMatch = regExpPattern.firstMatch(settings.name!)!;
         final match = (firstMatch.groupCount == 1) ? firstMatch.group(1) : null;
