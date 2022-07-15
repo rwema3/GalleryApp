@@ -93,6 +93,7 @@ class RouteConfiguration {
       ),
       openInSecondScreen: true,
     ),
+      openInSecondScreen: false,
     ),
   ];
 
