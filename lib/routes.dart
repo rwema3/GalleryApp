@@ -93,13 +93,6 @@ class RouteConfiguration {
       ),
       openInSecondScreen: true,
     ),
-    Path(
-      r'^' + reply_routes.homeRoute,
-      // ignore: prefer_const_constructors
-      (context, match) =>
-          const StudyWrapper(study: reply.ReplyApp(), hasBottomNavBar: true),
-      openInSecondScreen: true,
-    ),
   
 
   /// The route generator callback used when the app is navigated to a named
