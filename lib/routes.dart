@@ -93,7 +93,6 @@ class RouteConfiguration {
       ),
       openInSecondScreen: true,
     ),
-    Path(
     
       r'^/',
       (context, match) => const RootPage(),
