@@ -83,4 +83,20 @@ class RouteConfiguration {
       ),
       openInSecondScreen: true,
     ),
-  
+  @override
+  Iterable<OverlayEntry> createOverlayEntries() sync* {
+    yield OverlayEntry(builder: (context) {
+      final hinge = MediaQuery.of(context).hinge?.bounds;
+      if (hinge == null) {
+        return builder.call(context);
+      } else {
+        return Positioned(
+            top: 0,
+            left: hinge.right,
+            right: 0,
+            bottom: 0,
+            child: builder.call(context));
+      }
+    });
+  }
+}
