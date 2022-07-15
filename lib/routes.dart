@@ -84,6 +84,16 @@ class RouteConfiguration {
       openInSecondScreen: true,
     ),
   
+  @override
+  Widget buildTransitions(
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) {
+    return child;
+  }
+}
 
 class TwoPanePageRoute<T> extends OverlayRoute<T> {
   TwoPanePageRoute({
