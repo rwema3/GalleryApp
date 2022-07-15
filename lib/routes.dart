@@ -83,16 +83,6 @@ class RouteConfiguration {
       ),
       openInSecondScreen: true,
     ),
-    Path(
-      r'^' + fortnightly_routes.defaultRoute,
-      (context, match) => StudyWrapper(
-        study: DeferredWidget(
-            fortnightly.loadLibrary,
-            // ignore: prefer_const_constructors
-            () => fortnightly.FortnightlyApp()),
-      ),
-      openInSecondScreen: true,
-    ),
   
 
   /// The route generator callback used when the app is navigated to a named
