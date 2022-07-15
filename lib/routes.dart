@@ -91,6 +91,7 @@ class RouteConfiguration {
             // ignore: prefer_const_constructors
             () => fortnightly.FortnightlyApp()),
       ),
+          );
         }
         if (path.openInSecondScreen) {
           return TwoPanePageRoute<void>(
