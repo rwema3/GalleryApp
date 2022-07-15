@@ -95,7 +95,6 @@ class RouteConfiguration {
     ),
     
   
-  static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     for (final path in paths) {
       final regExpPattern = RegExp(path.pattern);
       if (regExpPattern.hasMatch(settings.name!)) {
