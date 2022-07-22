@@ -23,7 +23,10 @@ bool isDisplayDesktop(BuildContext context) =>
 
 /// Returns boolean value whether the window is considered medium size.
 ///
-
+/// Used to build adaptive and responsive layouts.
+bool isDisplaySmallDesktop(BuildContext context) {
+  return getWindowType(context) == AdaptiveWindowType.medium;
+}
 
 /// Returns a boolean value whether the display has a hinge that splits the
 /// screen into two, left and right sub-screens. Horizontal splits (top and
