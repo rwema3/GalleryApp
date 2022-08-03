@@ -20,31 +20,6 @@ class FadeScaleTransitionDemo extends StatefulWidget {
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    final localizations = GalleryLocalizations.of(context)!;
-
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Column(
-          children: [
-            Text(localizations.demoFadeScaleTitle),
-            Text(
-              '(${localizations.demoFadeScaleDemoInstructions})',
-              style: Theme.of(context)
-                  .textTheme
-                  .subtitle2!
-                  .copyWith(color: Colors.white),
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: AnimatedBuilder(
-        animation: _controller,
-        builder: (context, child) {
-          return FadeScaleTransition(
-            animation: _controller,
             child: child,
           );
         },
