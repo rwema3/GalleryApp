@@ -20,44 +20,6 @@ class FadeScaleTransitionDemo extends StatefulWidget {
     super.dispose();
   }
 
-            child: child,
-          );
-        },
-        child: Visibility(
-          visible: _controller.status != AnimationStatus.dismissed,
-          child: FloatingActionButton(
-            onPressed: () {},
-            child: const Icon(Icons.add),
-          ),
-        ),
-      ),
-      bottomNavigationBar: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const Divider(height: 0),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    showModal<void>(
-                        context: context,
-                        builder: (context) => _showExampleAlertDialog());
-                  },
-                  child: Text(localizations.demoFadeScaleShowAlertDialogButton),
-                ),
-                const SizedBox(width: 10),
-                ElevatedButton(
-                  onPressed: () {
-                    if (_isAnimationRunningForwardsOrComplete) {
-                      _controller.reverse();
-                    } else {
-                      _controller.forward();
-                    }
-                  },
-                  child: Text(
                     _isAnimationRunningForwardsOrComplete
                         ? localizations.demoFadeScaleHideFabButton
                         : localizations.demoFadeScaleShowFabButton,
