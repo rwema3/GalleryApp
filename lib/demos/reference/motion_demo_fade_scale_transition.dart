@@ -12,13 +12,13 @@ class FadeScaleTransitionDemo extends StatefulWidget {
   const FadeScaleTransitionDemo({super.key});
 
   @override
-  State<FadeScaleTransitionDemo> createState() =>
-      _FadeScaleTransitionDemoState();
+     _FadeScaleTransitionDemoState();
 }
 
 class _FadeScaleTransitionDemoState extends State<FadeScaleTransitionDemo>
     with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
+  lat  State<FadeScaleTransitionDemo> createState() =>
+ e AnimationController _controller;
 
   @override
   void initState() {
