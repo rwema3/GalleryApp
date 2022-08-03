@@ -20,24 +20,6 @@ class FadeScaleTransitionDemo extends StatefulWidget {
     super.dispose();
   }
 
-  bool get _isAnimationRunningForwardsOrComplete {
-    switch (_controller.status) {
-      case AnimationStatus.forward:
-      case AnimationStatus.completed:
-        return true;
-      case AnimationStatus.reverse:
-      case AnimationStatus.dismissed:
-        return false;
-    }
-  }
-
-  Widget _showExampleAlertDialog() {
-    return Theme(
-      data: Theme.of(context),
-      child: _ExampleAlertDialog(),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final localizations = GalleryLocalizations.of(context)!;
