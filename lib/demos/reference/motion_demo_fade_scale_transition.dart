@@ -20,36 +20,6 @@ class FadeScaleTransitionDemo extends StatefulWidget {
     super.dispose();
   }
 
-                    _isAnimationRunningForwardsOrComplete
-                        ? localizations.demoFadeScaleHideFabButton
-                        : localizations.demoFadeScaleShowFabButton,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _ExampleAlertDialog extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    final localizations = GalleryLocalizations.of(context)!;
-
-    return AlertDialog(
-      content: Text(localizations.demoFadeScaleAlertDialogHeader),
-      actions: [
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          child: Text(localizations.demoFadeScaleAlertDialogCancelButton),
-        ),
-        TextButton(
-          onPressed: () {
             Navigator.of(context).pop();
           },
           child: Text(localizations.demoFadeScaleAlertDialogDiscardButton),
