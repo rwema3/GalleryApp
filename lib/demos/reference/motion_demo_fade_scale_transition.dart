@@ -5,6 +5,22 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
+      floatingActionButton: AnimatedBuilder(
+        animation: _controller,
+        builder: (context, child) {
+          return FadeScaleTransition(
+            animation: _controller,
+            child: child,
+          );
+        },
+        child: Visibility(
+          visible: _controller.status != AnimationStatus.dismissed,
+          child: FloatingActionButton(
+            onPressed: () {},
+            child: const Icon(Icons.add),
+          ),
+        ),
+      ),
       bottomNavigationBar: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
