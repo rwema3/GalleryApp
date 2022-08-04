@@ -6,6 +6,21 @@ import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
 
+// BEGIN fadeScaleTransitionDemo
+
+class FadeScaleTransitionDemo extends StatefulWidget {
+  const FadeScaleTransitionDemo({super.key});
+
+  @override
+  State<FadeScaleTransitionDemo> createState() =>
+      _FadeScaleTransitionDemoState();
+}
+
+class _FadeScaleTransitionDemoState extends State<FadeScaleTransitionDemo>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  
 
   @override
   void dispose() {
