@@ -5,25 +5,6 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-  Widget build(BuildContext context) {
-    final localizations = GalleryLocalizations.of(context)!;
-
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Column(
-          children: [
-            Text(localizations.demoFadeScaleTitle),
-            Text(
-              '(${localizations.demoFadeScaleDemoInstructions})',
-              style: Theme.of(context)
-                  .textTheme
-                  .subtitle2!
-                  .copyWith(color: Colors.white),
-            ),
-          ],
-        ),
-      ),
       floatingActionButton: AnimatedBuilder(
         animation: _controller,
         builder: (context, child) {
