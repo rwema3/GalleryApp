@@ -95,3 +95,4 @@ static void my_application_class_init(MyApplicationClass* klass) {
   G_OBJECT_CLASS(klass)->dispose = my_application_dispose;
 }
 
+static void my_application_init(MyApplication* self) {}
