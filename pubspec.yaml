@@ -13,8 +13,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   adaptive_breakpoints: ^0.1.6  
-  animations: ^2.0.7
-  collection: ^1.16.0
+  animations: ^2.0.7  
+  collection: ^1.17.1
   cupertino_icons: ^1.0.4
   flutter_gallery_assets: ^1.0.2
   flutter_localized_locales: ^2.0.3
